@@ -1,5 +1,9 @@
 //elementos capturados do HTML
 const divRelogio = document.querySelector('.relogio');
+const inputNome = document.querySelector('.inputNome');
+const inputPeso = document.querySelector('.inputPeso'); //ou document.getElementsByClassName(inputPeso);
+const inputAltura = document.querySelector('.inputAltura');
+const botao = document.querySelector('button');
 
 // Aula 11/05
 let numeroAleatorio;
@@ -12,6 +16,10 @@ let numeroPiso;
 
 numeroPiso = Math.floor(4.87);
 console.log(`Número piso: ${numeroPiso}`);
+
+botao.addEventListener('click', function(evento){
+    evento.preventDefault();
+})
 
 const dataInicial = new Date(); //sem parâmetro, retorna a data atual.
 console.log(dataInicial);
