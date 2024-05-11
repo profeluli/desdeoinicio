@@ -4,6 +4,7 @@ const inputNome = document.querySelector('.inputNome');
 const inputPeso = document.querySelector('.inputPeso'); //ou document.getElementsByClassName(inputPeso);
 const inputAltura = document.querySelector('.inputAltura');
 const botao = document.querySelector('button');
+const divResultado = document.querySelector('.resultado');
 
 let nome;
 let peso;
@@ -29,6 +30,9 @@ botao.addEventListener('click', function(evento){
 
     let resultado = calculaIMC(peso, altura);
     console.log(resultado);
+
+    divResultado.classList.add('resultadoStyle');
+    divResultado.innerHTML = '${nome}, seu IMC é ${resultado}'
 
 })
 
