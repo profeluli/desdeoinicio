@@ -30,7 +30,7 @@ function atualizaRelogio() {
     segundos = adicionaZero(segundos);
     
     console.log(`${horas}:${minutos}:${segundos}`);
-    divRelogio.innerHTML = (`${horas}:${minutos}:${segundos}`);
+    divRelogio.innerHTML = (`${horas}:${minutos}:${segundos}`); //ISSO AQUI FAZ ABRIR O CONTEUDO NO HTML
     
 }
 
@@ -40,7 +40,7 @@ const relogio = setInterval(function(){
     atualizaRelogio();
 }, 1000);
 
-setTimeout(function(){
+/*setTimeout(function(){
     clearInterval(relogio);
 }, 10000);
 
@@ -51,5 +51,5 @@ function adicionaZero(numero){
         }
         return numero;
 }
-
+*/
 adicionaZero();
