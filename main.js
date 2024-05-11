@@ -5,6 +5,10 @@ const inputPeso = document.querySelector('.inputPeso'); //ou document.getElement
 const inputAltura = document.querySelector('.inputAltura');
 const botao = document.querySelector('button');
 
+let nome;
+let peso;
+let altura;
+
 // Aula 11/05
 let numeroAleatorio;
 
@@ -19,7 +23,17 @@ console.log(`Número piso: ${numeroPiso}`);
 
 botao.addEventListener('click', function(evento){
     evento.preventDefault();
+    nome = inputNome.value;
+    peso = Number(inputPeso.value);
+    altura = Number(inputAltura.value);
+
+    let resultado = calculaIMC(peso, altura);
 })
+
+function calculaIMC(peso, altura){
+    let imc = peso/(altura*altura);
+    return imc;
+}
 
 const dataInicial = new Date(); //sem parâmetro, retorna a data atual.
 console.log(dataInicial);
