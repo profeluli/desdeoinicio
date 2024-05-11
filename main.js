@@ -53,7 +53,7 @@ function atualizaRelogio() {
     let segundos = dataAtual.getSeconds();
     segundos = adicionaZero(segundos);
     
-    console.log(`${horas}:${minutos}:${segundos}`);
+    //console.log(`${horas}:${minutos}:${segundos}`);
     divRelogio.innerHTML = (`${horas}:${minutos}:${segundos}`); //ISSO AQUI FAZ ABRIR O CONTEUDO NO HTML
     
 }
