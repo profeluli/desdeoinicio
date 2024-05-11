@@ -32,7 +32,7 @@ botao.addEventListener('click', function(evento){
     console.log(resultado);
 
     divResultado.classList.add('resultadoStyle');
-    divResultado.innerHTML = Math.floor(`${nome}, seu IMC é ${resultado}`)
+    divResultado.innerHTML = `${nome}, seu IMC é` Math.floor(resultado);
 
 })
 
