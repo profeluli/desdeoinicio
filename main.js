@@ -42,7 +42,7 @@ const relogio = setInterval(function(){
 
 /*setTimeout(function(){
     clearInterval(relogio);
-}, 10000);
+}, 10000);*/
 
 //customizando com o zero à esquerda
 function adicionaZero(numero){
@@ -51,5 +51,5 @@ function adicionaZero(numero){
         }
         return numero;
 }
-*/
+
 adicionaZero();
